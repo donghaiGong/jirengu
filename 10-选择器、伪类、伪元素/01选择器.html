@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择器</title>
+    <style>
+        /* 元素选择器 */
+        h2 {
+            border: 1px solid black;
+        }
+        /* id选择器 */
+        #a1 {
+            background-color: red;
+        }
+        /* 类选择器  */
+        .a2 {
+            font-size: 30px;
+        }
+        /* 通用选择器 */
+        * {
+            background-color: #666666;
+        }
+
+        /* 属性选择器 */
+        /* 1.[attr~=value] 仅选择attr属性值中包换value值的所有元素 */
+        [title~=kebi],[title~=ai] {
+            font-size: 3em;
+        }
+        /* 2.[attr*=value] 选择attr属性的值中包含字符串value的元素 */
+        [title*=a] {
+            color:yellow;
+        }
+        /* 3.[attr^=value] 选择attr的值以value开头*/
+        [title^=t] {
+            color: cyan;
+        }
+        /* 4.[attr]$=value] 选择attr的值以value结头 */
+        [title$=de] {
+            border:2px solid blue;
+        }
+        /* 5.[attr|=val] 选择 attr 属性的值是val或以 val-开头的元素 （-用来处理语言编码） */
+        [title|=kebi] {
+            color: cornsilk;
+        }
+    </style>
+
+
+</head>
+
+<body>
+<h2 title="kebi-24">科比</h2>
+<h3 id="a1" title="ai">艾佛森</h3>
+<h2 class="a2">詹姆斯</h2>
+<h3 title="huohuade">霍华德</h3>
+<h2 title="weide">韦德</h2>
+<p title="test">孙悟空</p>
+<p title=test2>猪八戒</p>
+<p>沙和尚</p>
+</body>
+
+</html>

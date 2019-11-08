@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪类demo</title>
+    <style>
+        /* 
+        1.  :link 选中未访问的链接
+        2.  :hover 选中鼠标放置上的链接
+        3.  :active 选中鼠标按下未松开时的链接
+        4.  visited 选中访问过的链接
+        5.  顺序： link visited hover active
+         */
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color: grey;
+        }
+        a:hover {
+            color: blue;
+        }
+        a:active {
+            color: yellow;
+        }
+        :root {
+            background-color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <a href="#1">百度</a>
+    <a href="#2">谷歌</a>
+    <a href="#3">搜狗</a>
+</body>
+</html>

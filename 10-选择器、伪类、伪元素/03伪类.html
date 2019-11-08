@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪类demo</title>
+    <style>
+        /* 
+        1.first-child
+        2.last-child
+        3.nth-child(n)
+         */
+        .box :first-child {
+            color:red;
+        }
+        .box :last-child {
+            border:1px solid blue;
+        }
+        .box :nth-child(2) {
+            font-size: 2em;
+        }
+
+        /* 
+        1.first-of-type 作为自己父亲 当前标签类型的第X个孩子
+        2.last-of-type
+        3.nth-of-type(n)
+         */
+         .box2 :first-of-type {
+             color: red;
+         }
+         .box2 :nth-of-type(2) {
+             color: blue;
+         }
+         
+         
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>标题</h2>
+        <p>饥人谷</p>
+        <p>前端</p>
+
+    </div>
+
+    <br>
+
+    <div class="box2">
+        <h2>NBA</h2><!-- 红色 -->
+        <p>科比</p><!-- 红色 -->
+        <p>AAA</p>
+        <p>BBB</p>
+        <p>大家好，我已经退役了</p>
+        <span>test</span>
+        <span>test</span><!-- 蓝色 --> 
+    </div>
+</body>
+</html>

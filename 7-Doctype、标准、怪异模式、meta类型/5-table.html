@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table</title>
+    <style>
+        table{
+            width: 400px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            border:1px solid black
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- caption  表头 -->
+        <caption>表头</caption>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+            </tr>            
+
+            <tr>
+                <td>小明</td>
+                <td>19</td>
+                <td>男</td>
+            </tr>            
+
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>      
+    </table>
+
+    <table>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>性别</th>
+                </tr>            
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td> 
+                    <td>3</td>
+                </tr>   
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                </tr>          
+            </tbody>
+    
+            <tfoot>
+           <tr>
+               <td colspan="3">总结，这个是表的尾巴</td>
+           </tr>
+            </tfoot>
+    
+            <img src=“/static/a.png” alt=“logo”>
+        </table>
+</body>
+</html>

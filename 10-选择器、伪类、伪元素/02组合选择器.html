@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>组合选择器</title>
+    <style>
+        /* a,b  同时选中a和b */
+        .kebi,
+        .lbj {
+            color: blue;
+        }
+
+        /* a b  选中a的后代b元素 */
+        .datail li {
+            background-color: #666666;
+        }
+
+        /* AB 选中既是A又是B的元素 */
+        .item.active {
+            font-size: 2em;
+        }
+
+        /* A > B 选中A的直接子元素B */
+        .test>li {
+            border:1px solid;
+        }
+        /* A + B   选中A的下一个相邻元素B  */
+        .test3+li {
+            color:red;
+        }
+        /* A~B  选中A的后面全部相邻元素B */
+        .test2~li {
+            font-size: 2em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p class="kebi">科比</p>
+    <p class="lbj">詹姆斯</p>
+    <p class="zimuge">字母哥</p>
+    <br>
+    <ul class="datail">
+        <li>AAA</li>
+        <ul>
+            <li>AAA-a</li>
+            <li>AAA-b</li>
+            <li>AAA-c</li>
+        </ul>
+        <li>BBB</li>
+        <li>CCC</li>
+    </ul>
+    <ul>
+        <li>DDD</li>
+        <li>EEE</li>
+    </ul>
+    <br>
+    <ul>
+        <li class="item">111</li>
+        <li class="item active">被选中</li>
+    </ul>
+    <br>
+
+    <ul class="test">
+        <li>0000
+            <ul>1111</ul>
+            <ul>2222</ul>
+        </li>
+        <li>3333</li>
+        <li>4444</li>
+    </ul>
+    <br>
+    
+    <ul class="test2">
+        <li class="test3">111</li>
+        <li>222</li>
+        <li>333</li>
+    </ul>
+</body>
+
+</html>
