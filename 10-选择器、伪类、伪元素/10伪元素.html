@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10-伪元素</title>
+    <style>
+        /* 
+        ::first-line 选中段落的第一行
+        ::first-letter 选中段落的第一个字符
+        ::selection 匹配被鼠标选中的文字内容
+         */
+         p::first-line {
+             color: blue;
+             font-size: 20px;
+             border: 1px solid red;
+         }
+         p::first-letter {
+            font-size: 30px;
+         }
+         p::selection{
+             color: pink;
+         }
+    </style>
+</head>
+
+<body>
+    <p>
+        我在5年前，花钱买了一本书，价格680元。这本书讲的是一个新手如何利用身边资源，白手起家挣到第一个100万。在国内至今没有发行，里面藏的秘密太多。书里讲了如何去找项目、找流量、计算投资回报比、复制裂变经营、广告投放等等经验。对当时的我影响巨大，后来靠着书里的方法，衍生到互联里，很快就用这个方法找到了自己的第一桶金。
+    </p>
+</body>
+
+</html>

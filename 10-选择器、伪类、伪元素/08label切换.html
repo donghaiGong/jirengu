@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>labelDemo</title>
+    <style>
+        input {
+            display: none;
+        }
+        .panel {
+            display: none;
+        }
+        :checked+.panel {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <label for="radio1">tab1</label>
+    <label for="radio2">tab2</label>
+
+    <input type="radio" name="tab" id="radio1">
+    <div class="panel">panel1</div>
+
+    <input type="radio" name="tab" id="radio2">
+    <div class="panel">panel2</div>
+</body>
+</html>

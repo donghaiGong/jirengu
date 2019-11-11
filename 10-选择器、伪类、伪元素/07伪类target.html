@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>target</title>
+    <style>
+        .tab {
+            border: 1px solid #ccc;
+        }
+        .content {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+            display: none;/*默认为隐藏的*/
+        }
+        #tab0 {
+            display: block; /*块级元素*/
+        }
+        .content:target {
+            display: block;
+        }
+        .content:target~#tab0 {
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+</body>
+
+<a href="#tab1" class="tab">tab1</a>
+<a href="#tab2" class="tab">tab2</a>
+
+<div id="tab1" class="content">
+    tab1的内容
+</div>
+<div id="tab2" class="content">
+    tab2的内容
+</div>
+<div id="tab0" class="content">
+    tab1的内容
+</div>
+</html> 

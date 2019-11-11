@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>focus</title>
+    <style>
+        /* 
+        CSS伪类 :focus表示获得焦点的元素（如表单输入）。当用户点击或触摸元素或通过键盘的 “tab” 键选择它时会被触发。
+         */
+        .red-input:focus {
+            background:yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input class="red-input" value="I'll be red when focused.">
+        <input class="blue-input" value="I'll be blue when focused.">
+    </form>
+</body>
+</html>

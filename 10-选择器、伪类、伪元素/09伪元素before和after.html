@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪元素</title>
+    <style>
+        li.email::before {
+            content: ' ';
+            display: inline-block;/* 行内块元素 */
+            width: 30px;
+            height: 30px;
+            background: red;
+        }
+        li.tel::before {
+            content: ' ';
+            display: inline-block;/* 行内块元素 */
+            width: 30px;
+            height: 30px;
+            background: red;
+        }
+
+    </style>
+        
+</head>
+<body>
+<ul>
+    <li class="email">salabook@qq.com</li>
+    <li class="tel">18516067557</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+</body>
+</html>
