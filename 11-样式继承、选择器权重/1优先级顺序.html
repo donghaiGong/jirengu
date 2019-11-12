@@ -1,0 +1,35 @@
+<!-- 
+    =============我的笔记===================
+    样式来源：
+        1 使用不同的选择器设置的样式
+        2 浏览器默认样式，user agent stylesheet
+        3 继承样式 Inherited from xxx
+
+    优先级顺序
+    !important > 内联样式 > 选择器设置样式 > 浏览器设置样式 > 继承样式
+    =========================================
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优先级顺序</title>
+</head>
+<body>
+    <div class="box">
+        <p>好好学习，天天向上</p>
+        <h1>test</h1>
+        <ul>
+            <li>test</li>
+        </ul>
+        <a href="#123">测试用的链接</a>
+    </div>
+    <style>
+        p {
+            color: blue!important;/*优先级最高，尽量少用，除非迫不得已（队友写了辣鸡code，内联样式需要覆盖）*/
+        }
+    </style>
+</body>
+</html>

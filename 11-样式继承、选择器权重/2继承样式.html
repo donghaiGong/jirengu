@@ -1,0 +1,26 @@
+<!-- 
+    ===========我的笔记==========
+
+    ============================
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>继承样式</title>
+</head>
+<body>
+    <!-- 对于如下代码，a链接的样式是什么？ -->
+    <div class="box">
+        <a href="#1">好好学习，天天向上</a><!-- 为蓝色，因为a标签继承的是.box的样式，而继承样式的优先级是最弱的 -->
+    </div>
+    <style>
+        .box {
+            color: red!important;
+        }
+    </style>
+    <!-- ------------------------------------------- -->
+</body>
+</html>
