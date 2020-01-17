@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- 
+  width: 100%代表什么意思？
+  height: 100% 怎么用？
+  
+  .box {
+    width: 100px;
+    height: 200px; /*一般不需要设置*/
+  }
+
+  .box {
+    width: 33.3%; 限制条件：不能有content 不能有边框
+    width: 100%; 
+    height: 100% 直接父亲也需要有height
+  }
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      height: 100%;
+    }
+    .box {
+      height:100%;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+<div class="box">
+  
+</div>
+</body>
+</html>

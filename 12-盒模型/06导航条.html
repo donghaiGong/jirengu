@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>导航条</title>
+    <style>
+        nav {
+            background: #ccc;
+            width: 800px;
+            margin:0 auto;
+            text-align: center;
+        }
+        nav > a {
+            /* 设置导航条的样式 */
+            text-decoration: none;
+            color:black;
+            padding: 18px;
+            display: inline-block;
+            
+
+        }
+        nav > a.active {
+            background:#999;
+            color:black;
+        }
+        nav > a:hover {
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#1" class="active">首页</a>
+            <a href="#2">产品</a>
+            <a href="#3">反馈</a>
+        </nav>
+    </header>
+</body>
+</html>
