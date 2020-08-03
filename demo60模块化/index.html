@@ -1,0 +1,62 @@
+<!--
+ * @Author: GongDonghai
+ * @Date: 2020-08-03 21:07:50
+ * @LastEditors: GongDonghai
+ * @LastEditTime: 2020-08-03 21:25:53
+ * @FilePath: \jirengu\demo60模块化\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>点我</button>
+    <p></p>
+</body>
+<script>
+    /*
+    let $button = document.querySelector('button');
+    let $p = document.querySelector('p');
+
+    $button.onclick = function(){
+        $p.innerText = 'hello world!'
+    }
+    */
+
+    /*
+    const App = {
+        init(){
+            this.$button = document.querySelector('button');
+            this.$p = document.querySelector('p');
+
+            this.bind();
+        },
+        bind(){
+            this.$button.onclick = ()=>{
+                this.render();
+            }
+        },
+        render(){
+            this.$p.innerText = 'Hello RickeyGong'
+        }
+    }
+    App.init();
+    */
+
+    const App = (function () {
+        let $button = document.querySelector('button');
+        let $p = document.querySelector('p');
+        function init() {
+            $button.onclick = function () {
+                $p.innerText = 'hello world!';
+            }
+        }
+        return { init }
+    })()
+    App.init();
+
+</script>
+</html>
